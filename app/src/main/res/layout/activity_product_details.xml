@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/backBtnDetails"
-        android:layout_width="55dp"
-        android:layout_height="36dp"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
         android:text="Button" />
 
     <ScrollView
