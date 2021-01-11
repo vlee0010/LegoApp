@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="3_SML" size="0.420000 0.420000" />
+    <ImageTarget name="5_Toang" size="0.420000 0.420000" />
+    <ImageTarget name="6_Dis" size="0.400000 0.400000" />
+    <ImageTarget name="7_Quay" size="0.400000 0.400000" />
+    <ImageTarget name="2_Gau" size="0.400000 0.400000" />
+    <ImageTarget name="8_Vai" size="0.400000 0.400000" />
+    <ImageTarget name="4_Gay" size="0.400000 0.400000" />
+    <ImageTarget name="9_Gat" size="0.400000 0.400000" />
+    <ImageTarget name="1_TreTrau" size="0.420000 0.420000" />
+  </Tracking>
+</QCARConfig>
