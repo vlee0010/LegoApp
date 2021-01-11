@@ -17,7 +17,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:srcCompat="@drawable/homepage_02_mask" />
+            app:srcCompat="@mipmap/homepage_02_mask" />
 
     </ScrollView>
 
@@ -31,14 +31,14 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/homepage_01" />
+            app:srcCompat="@mipmap/homepage_01" />
 
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="51dp"
         android:layout_gravity="bottom"
         android:background="#00000000"
         android:navigationBarColor="#00000000"
@@ -56,9 +56,9 @@
         <ImageView
             android:id="@+id/imageView25"
             android:layout_width="match_parent"
-            android:layout_height="39.5dp"
+            android:layout_height="45dp"
             android:layout_gravity="bottom"
-            app:srcCompat="@drawable/nav" />
+            app:srcCompat="@mipmap/nav" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 </FrameLayout>
 

@@ -17,7 +17,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:srcCompat="@drawable/account_02" />
+            app:srcCompat="@mipmap/account_02" />
     </ScrollView>
 
     <ScrollView
@@ -30,7 +30,7 @@
             android:layout_height="match_parent "
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/account_01" />
+            app:srcCompat="@mipmap/account_01" />
     </ScrollView>
 
 </FrameLayout>

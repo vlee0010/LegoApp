@@ -1,3 +1,4 @@
+include ':LegoARUnity-debug'
 include ':Test-debug'
 include ':app'
 rootProject.name = "LegoAR"

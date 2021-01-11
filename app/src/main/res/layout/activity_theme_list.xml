@@ -23,7 +23,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:srcCompat="@drawable/theme_list_02" />
+            app:srcCompat="@mipmap/theme_list_02" />
     </ScrollView>
 
     <ScrollView
@@ -36,6 +36,6 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/theme_list_01" />
+            app:srcCompat="@mipmap/theme_list_01" />
     </ScrollView>
 </FrameLayout>

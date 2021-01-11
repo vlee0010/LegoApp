@@ -13,7 +13,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:visibility="invisible"
-        app:srcCompat="@drawable/search_02" />
+        app:srcCompat="@mipmap/search_02" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -21,6 +21,6 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/search_01" />
+        app:srcCompat="@mipmap/search_01" />
 
 </FrameLayout>

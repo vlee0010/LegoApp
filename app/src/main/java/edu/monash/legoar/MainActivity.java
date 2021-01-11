@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.CLism.LegoAR.UnityPlayerActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
                     case R.id.camera_activity:
+                        startActivity(new Intent(getApplicationContext(), UnityPlayerActivity.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
                     case R.id.cart_activity:
                         startActivity(new Intent(getApplicationContext(), Cart.class));
@@ -89,12 +92,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-//        NavController navController = Navigation.findNavController(this, R.id.fragment);
-//
-//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.home, R.id.search, R.id.cart).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//
-//        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+
 //        unityBtn = findViewById(R.id.unityBtn);
 //        unityBtn.setText("Scan");
 //        unityBtn.setOnClickListener(new View.OnClickListener() {

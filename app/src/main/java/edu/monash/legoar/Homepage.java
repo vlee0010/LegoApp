@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.CLism.LegoAR.UnityPlayerActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Homepage extends AppCompatActivity {
@@ -33,6 +34,8 @@ public class Homepage extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
                     case R.id.camera_activity:
+                        startActivity(new Intent(getApplicationContext(), UnityPlayerActivity.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
                     case R.id.cart_activity:
                         startActivity(new Intent(getApplicationContext(),Cart.class));

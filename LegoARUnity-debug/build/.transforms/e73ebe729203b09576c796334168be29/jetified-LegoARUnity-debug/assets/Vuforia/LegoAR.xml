@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="FakeLogo2" size="0.050000 0.050000" />
+    <ImageTarget name="TheSanPham-02" size="0.100000 0.084900" />
+    <ImageTarget name="TheSanPham-01" size="0.100000 0.084800" />
+    <ImageTarget name="EmployeeCard" size="0.050000 0.076176" />
+    <ImageTarget name="Cardvisit_Front2" size="0.050000 0.028597" />
+    <ImageTarget name="FakeLogo1" size="0.100000 0.100000" />
+    <ImageTarget name="Test" size="1.200000 1.880000" />
+    <ImageTarget name="Cardvisit_Front" size="0.050000 0.028588" />
+  </Tracking>
+</QCARConfig>
