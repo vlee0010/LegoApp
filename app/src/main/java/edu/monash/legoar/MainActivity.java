@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), Search.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
+                    case R.id.camera_activity:
+                        return true;
                     case R.id.cart_activity:
                         startActivity(new Intent(getApplicationContext(), Cart.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

@@ -24,22 +24,24 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/homepage_2_01" />
+            app:srcCompat="@drawable/homepage_01" />
 
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_gravity="bottom"
-        android:background="#fff"
+        android:background="#00000000"
+        android:navigationBarColor="#00000000"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:labelVisibilityMode="unlabeled"
@@ -54,7 +56,7 @@
         <ImageView
             android:id="@+id/imageView25"
             android:layout_width="match_parent"
-            android:layout_height="47dp"
+            android:layout_height="39.5dp"
             android:layout_gravity="bottom"
             app:srcCompat="@drawable/nav" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>

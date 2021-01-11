@@ -10,6 +10,10 @@
         android:icon="@drawable/ic_search"
         android:title="Search" />
     <item
+        android:id="@+id/camera_activity"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        android:title="Camera" />
+    <item
         android:id="@+id/cart_activity"
         android:icon="@drawable/ic_shopping_cart"
         android:title="Cart" />

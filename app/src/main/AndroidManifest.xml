@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".Contact"></activity>
+        <activity android:name=".ProductDetails3"></activity>
+        <activity android:name=".ProductDetails2" />
+        <activity android:name=".Contact" />
         <activity android:name=".AccountSettings" />
         <activity android:name=".Homepage" />
         <activity android:name=".Account" />

@@ -72,9 +72,16 @@ class AppUtilities extends Activity {
         else if (ct.closeMatch (Color.rgb(128,128,128), touchColor, tolerance)){
             startNewActivity(context, Contact.class);
         }
+        else if (ct.closeMatch (Color.rgb(158,11,15), touchColor, tolerance)){
+            startNewActivity(context, ProductDetails2.class);
+        }
+        else if (ct.closeMatch (Color.rgb(245,152,157), touchColor, tolerance)){
+            startNewActivity(context, ProductDetails3.class);
+        }
         else if (ct.closeMatch (Color.BLACK, touchColor, tolerance) || (ct.closeMatch (Color.rgb(252,238,33), touchColor, tolerance)) ){
             startNewActivity(context, MainActivity.class);
         }
+
     }
 
     public static void startNewActivity(Context context, Class newActivity){
