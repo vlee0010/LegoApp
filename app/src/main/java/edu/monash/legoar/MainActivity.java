@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         return true;
                     case R.id.camera_activity:
-                        startActivity(new Intent(getApplicationContext(), UnityPlayerActivity.class));
+                        startActivity(new Intent(getApplicationContext(), UnityActivity.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 //                        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.CLism.LegoAR");
 //                        if (launchIntent != null) {
