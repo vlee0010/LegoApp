@@ -12,7 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LegoARUnity-debug" />
-            <option value="$PROJECT_DIR$/Test-debug" />
+            <option value="$PROJECT_DIR$/VuforiaWrapper" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

@@ -26,8 +26,9 @@ android {
 }
 
 dependencies {
-    //implementation project(":Test-debug")
+    //  implementation project(":Test-debug")
     implementation project(":LegoARUnity-debug")
+    implementation project(":VuforiaWrapper")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'

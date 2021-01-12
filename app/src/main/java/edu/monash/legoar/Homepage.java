@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.CLism.LegoAR.UnityPlayerActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -36,6 +37,13 @@ public class Homepage extends AppCompatActivity {
                     case R.id.camera_activity:
                         startActivity(new Intent(getApplicationContext(), UnityPlayerActivity.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.CLism.LegoAR");
+//                        if (launchIntent != null) {
+//                            startActivity(launchIntent);
+//                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        } else {
+//                            Toast.makeText(Homepage.this, "There is no package available in android", Toast.LENGTH_LONG).show();
+//                        }
                         return true;
                     case R.id.cart_activity:
                         startActivity(new Intent(getApplicationContext(),Cart.class));

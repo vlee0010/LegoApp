@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.camera_activity:
                         startActivity(new Intent(getApplicationContext(), UnityPlayerActivity.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.CLism.LegoAR");
+//                        if (launchIntent != null) {
+//                            startActivity(launchIntent);
+//                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        } else {
+//                            Toast.makeText(MainActivity.this, "There is no package available in android", Toast.LENGTH_LONG).show();
+//                        }
+
                         return true;
                     case R.id.cart_activity:
                         startActivity(new Intent(getApplicationContext(), Cart.class));
