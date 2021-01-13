@@ -19,6 +19,44 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         ImageView view = findViewById(R.id.imageView16);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setSelectedItemId(R.id.homepage_activity);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.homepage_activity:
+                        startActivity(new Intent(getApplicationContext(), Homepage.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                        return true;
+                    case R.id.search_activity:
+//                        startActivity(new Intent(getApplicationContext(), Search.class));
+//                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                        return true;
+                    case R.id.camera_activity:
+                        startActivity(new Intent(getApplicationContext(), UnityActivity.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.CLism.LegoAR");
+//                        if (launchIntent != null) {
+//                            startActivity(launchIntent);
+//                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                        } else {
+//                            Toast.makeText(MainActivity.this, "There is no package available in android", Toast.LENGTH_LONG).show();
+//                        }
+
+                        return true;
+                    case R.id.cart_activity:
+                        startActivity(new Intent(getApplicationContext(), Cart.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                        return true;
+                    case R.id.account_activity:
+                        startActivity(new Intent(getApplicationContext(), Account.class));
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                        return true;
+                }
+                return false;
+            }
+        });
         view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

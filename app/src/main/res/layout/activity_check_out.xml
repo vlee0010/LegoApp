@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        app:srcCompat="@mipmap/checkout_01" />
+        app:srcCompat="@drawable/checkout_01" />
 
     <Button
         android:id="@+id/backBtnCheckout"

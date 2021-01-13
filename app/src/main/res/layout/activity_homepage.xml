@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:srcCompat="@mipmap/homepage_02_mask" />
+            app:srcCompat="@drawable/homepage_02_mask" />
 
     </ScrollView>
 
@@ -31,34 +31,28 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/homepage_01" />
+            app:srcCompat="@drawable/homepage_01" />
 
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
+        android:layout_width="500dp"
         android:layout_height="51dp"
-        android:layout_gravity="bottom"
-        android:background="#00000000"
-        android:navigationBarColor="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/nav"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/menu_navigation">
 
-        <ImageView
-            android:id="@+id/imageView25"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_gravity="bottom"
-            app:srcCompat="@mipmap/nav" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView25"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            app:srcCompat="@drawable/nav" />-->
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-</FrameLayout>
+</RelativeLayout>
 

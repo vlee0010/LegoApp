@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:srcCompat="@mipmap/account_02" />
+            app:srcCompat="@drawable/account_02" />
     </ScrollView>
 
     <ScrollView
@@ -27,10 +27,28 @@
         <ImageView
             android:id="@+id/imageView19"
             android:layout_width="match_parent"
-            android:layout_height="match_parent "
+            android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/account_01" />
+            app:srcCompat="@drawable/account_01" />
     </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="500dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/nav"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_navigation">
 
-</FrameLayout>
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView25"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            app:srcCompat="@drawable/nav" />-->
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
